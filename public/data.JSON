@@ -1,0 +1,148 @@
+[
+    {
+        "usuario_id": 1,
+        "username": "Juan",
+        "user_pfp": "https://media.istockphoto.com/id/1413766112/es/foto/exitoso-hombre-de-negocios-maduro-mirando-a-la-c%C3%A1mara-con-confianza.jpg?s=612x612&w=0&k=20&c=_wh29d41PN8a3GlqANKphBMIkN2P-QI4KPPIM7bVvDA=",
+        "chats": [
+            {
+                "chat_id": 1,
+                "chat_username": "Thiago",
+                "estado": 1,
+                "chat_pfp": "https://media.istockphoto.com/id/1364917563/es/foto/hombre-de-negocios-sonriendo-con-los-brazos-cruzados-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=NqMHLF8T4RzPaBE_WMnflSGB_1-kZZTQgAkekUxumZg=",
+                "last_msj": "1d",
+                "mensajes": [
+                    {
+                        "emisor": "Juan",
+                        "fecha": "20/09/2024 18:00",
+                        "text": "Hola amigo todo bien"
+                    }
+                ]
+            },
+            {
+                "chat_id": 2,
+                "chat_username": "Roman",
+                "estado": 3,
+                "chat_pfp": "https://images.vexels.com/media/users/3/215788/isolated/lists/eef34f5740249cb9781e656b16f3ed73-sonriendo-jugando-videojuegos-chico-plano.png",
+                "last_msj": "3d",
+                "mensajes": [
+                    {
+                        "emisor": "Juan",
+                        "fecha": "21/09/2024 22:22",
+                        "text": "Jugas amigo?"
+                    }
+                ]
+            }
+        ],
+        "canales": [
+            {
+                "canal_id": 1,
+                "canal_pfp": "https://lambdatres.com/wp-content/uploads/2020/12/lista-de-muebles-de-oficina-imprescindibles-256x256.jpg",
+                "canal_miembros": [
+                    {
+                        "miembro_id": 1,
+                        "miembro_username": "Juan",
+                        "miembro_pfp": "https://media.istockphoto.com/id/1413766112/es/foto/exitoso-hombre-de-negocios-maduro-mirando-a-la-c%C3%A1mara-con-confianza.jpg?s=612x612&w=0&k=20&c=_wh29d41PN8a3GlqANKphBMIkN2P-QI4KPPIM7bVvDA="
+                    },
+                    {
+                        "miembro_id": 2,
+                        "miembro_username": "Maria",
+                        "miembro_pfp": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Q0qQTTkBhNzsFqbxy4s5570_yM4SV78PTw&s"
+                    }
+                ],
+                "canal_chats": [
+                    {
+                        "canal_chat_id": 1,
+                        "canal_chat_nombre": "General",
+                        "canal_mensajes": [
+                            {
+                                "emisor": "Juan",
+                                "fecha": "20/09/2024 18:00",
+                                "text": "Buen dia grupo"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "canal_id": 2,
+                "canal_pfp": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4LxhbHtbVoVVRkCl4D0IsrhkQjeNnkqQcfw&s",
+                "canal_miembros": [
+                    {
+                        "miembro_id": 1,
+                        "miembro_username": "Juan",
+                        "miembro_pfp": "https://media.istockphoto.com/id/1413766112/es/foto/exitoso-hombre-de-negocios-maduro-mirando-a-la-c%C3%A1mara-con-confianza.jpg?s=612x612&w=0&k=20&c=_wh29d41PN8a3GlqANKphBMIkN2P-QI4KPPIM7bVvDA="
+                    },
+                    {
+                        "miembro_id": 2,
+                        "miembro_username": "Thiago",
+                        "miembro_pfp": "https://media.istockphoto.com/id/1364917563/es/foto/hombre-de-negocios-sonriendo-con-los-brazos-cruzados-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=NqMHLF8T4RzPaBE_WMnflSGB_1-kZZTQgAkekUxumZg="
+                    }
+                ],
+                "canal_chats": [
+                    {
+                        "canal_chat_id": 1,
+                        "canal_chat_nombre": "General",
+                        "canal_mensajes": [
+                            {
+                                "emisor": "Juan",
+                                "fecha": "20/09/2024 18:00",
+                                "text": "Buen dia grupo"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "usuario_id": 2,
+        "username": "Maria",
+        "user_pfp": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Q0qQTTkBhNzsFqbxy4s5570_yM4SV78PTw&s",
+        "chats": [
+            {
+                "chat_id": 1,
+                "chat_username": "Thiago",
+                "chat_pfp": "https://media.istockphoto.com/id/1364917563/es/foto/hombre-de-negocios-sonriendo-con-los-brazos-cruzados-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=NqMHLF8T4RzPaBE_WMnflSGB_1-kZZTQgAkekUxumZg=",
+                "last_msj": "1d",
+                "mensajes": [
+                    {
+                        "emisor": "Juan",
+                        "fecha": "20/09/2024 18:00",
+                        "text": "Hola amigo todo bien"
+                    }
+                ]
+            }
+        ],
+        "canales": [
+            {
+                "canal_id": 1,
+                "canal_pfp": "https://lambdatres.com/wp-content/uploads/2020/12/lista-de-muebles-de-oficina-imprescindibles-256x256.jpg",
+                "canal_miembros": [
+                    {
+                        "miembro_id": 1,
+                        "miembro_username": "Juan",
+                        "miembro_pfp": "https://media.istockphoto.com/id/1413766112/es/foto/exitoso-hombre-de-negocios-maduro-mirando-a-la-c%C3%A1mara-con-confianza.jpg?s=612x612&w=0&k=20&c=_wh29d41PN8a3GlqANKphBMIkN2P-QI4KPPIM7bVvDA="
+                    },
+                    {
+                        "miembro_id": 2,
+                        "miembro_username": "Maria",
+                        "miembro_pfp": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Q0qQTTkBhNzsFqbxy4s5570_yM4SV78PTw&s"
+                    }
+                ],
+                "canal_chats": [
+                    {
+                        "canal_chat_id": 1,
+                        "canal_chat_nombre": "General",
+                        "canal_mensajes": [
+                            {
+                                "emisor": "Juan",
+                                "fecha": "20/09/2024 18:00",
+                                "text": "Buen dia grupo"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

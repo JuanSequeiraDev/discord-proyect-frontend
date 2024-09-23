@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&display=swap');
+
+/*                           Header                             */
+
+.chats-header{
+    display: flex;
+    height: 8vh;
+    flex-direction: column;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    border-bottom: 1.5px solid #191a20;
+    /* background-color: #101116; */
+}
+
+.mensajes{
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    font-family: "Noto Sans Warang Citi", sans-serif;
+}
+
+.search-add-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 7px;
+}
+
+.search-add-nav .search-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(57, 62, 70);
+    border-radius: 50%;
+}
+
+.search-add-nav .search-icon .lupa{
+    color: gainsboro;
+    font-size: 15px;
+}
+
+.search-add-nav .añadir-amigos{
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    gap: 5px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gainsboro;
+    background-color: rgb(57, 62, 70);
+    width: 200px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+
+.search-add-nav .añadir-amigos .friend-icon{
+    font-size: 15px;
+}
+
+
+/*                               Main                                */
+
+.chats-main{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-top: 11.5vh;
+}
+
+.chats-nav{
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    overflow-y: scroll;
+    gap: 10px;
+    padding-left: 7px;
+}
+
+.chats-nav .chat-box{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+/*     height: 30px; */
+    gap: 5px;
+    padding: 5px 16px 5px 5px;
+    cursor: pointer;
+    align-items: end;
+    border-radius: 10px;
+}
+
+.chats-nav .chat-box:hover{
+    border-radius: 10px;
+    transition-duration: 500ms;
+    background-color: rgb(57, 62, 70);
+    width: 90%;
+    padding: 5px 16px 5px 5px;
+}
+
+.chats-nav .chat-box .chat-pfp{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.chats-nav .chat-box .titulo-ult-msg{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.chats-nav .chat-box .titulo-ult-msg .chat-title{
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    color: rgb(157, 157, 158);
+    word-break: break-all;
+    
+}
+
+.chats-nav .chat-box .titulo-ult-msg .last-msg{
+    font-size: 9px;
+    letter-spacing: 0.8px;
+    color: rgb(157, 157, 158);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 60vw;
+}
+
+.chats-nav .chat-box .last-msg-date{
+    font-size: 9px;
+    color: rgb(157, 157, 158);
+}
+

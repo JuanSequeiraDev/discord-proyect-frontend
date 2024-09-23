@@ -1,0 +1,46 @@
+.sidenav{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    width: 18vw;
+    height: 100vh;
+    background-color: #0a0c11;
+}
+
+.chats-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 6.5%;
+    margin: 10px 0 15px 0 ;
+    background-color: #2B2D31;
+    border-radius: 50%;
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+.chats-icon .msg-bubble{
+    font-size: 22px;
+    color: rgb(156, 155, 155);
+}
+
+
+.canal-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 6%;
+    border-radius: 50%;
+    background-color: #2B2D31;
+    margin-bottom: 10px;
+
+}
+
+.canal-icon .canal-img{
+    width: 100%;
+    border-radius: 50%;
+}
