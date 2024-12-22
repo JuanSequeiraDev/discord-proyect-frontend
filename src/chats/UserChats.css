@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&display=swap');
+
+* {
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+/*                           Header                             */
+
+.chats-header {
+    display: flex;
+    height: 8vh;
+    flex-direction: column;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    border-bottom: 1.5px solid #222327;
+    z-index: 3;
+    /* background-color: #101116; */
+}
+
+.mensajes {
+    font-size: 13px;
+    letter-spacing: 1.2px;
+}
+
+.search-add-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 7px;
+}
+
+.search-add-nav .search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(57, 62, 70);
+    border-radius: 50%;
+    position: fixed;
+    left: 22vw;
+}
+
+.search-add-nav .search-icon .lupa {
+    color: gainsboro;
+    font-size: 15px;
+}
+
+.search-add-nav .añadir-amigos {
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    gap: 5px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gainsboro;
+    background-color: rgb(57, 62, 70);
+    width: 200px;
+    height: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 12vw;
+}
+
+.search-add-nav .añadir-amigos .friend-icon {
+    font-size: 15px;
+}
+
+.search-add-nav .contact-add-container{
+    display: flex;
+    align-items: center;
+    background-color: rgb(57, 62, 70);
+    border-radius: 15px;
+    padding: 7px 10px 7px 10px;
+    margin-left: 12vw;
+    width: 180px;
+}
+
+.search-add-nav .contact-add-container .close-form-bttn{
+    background-color: transparent;
+    border: none;
+    color: #B5BAC1;
+    font-weight: 500; 
+    padding-right: 5px;
+    font-size: 10px;
+}
+
+.search-add-nav .contact-add-container .contact-input{
+    color: #B5BAC1;
+    border: none;
+    background-color: transparent;
+}
+
+.search-add-nav .contact-add-container .add-friend-bttn{
+    padding-left: 5%;
+    border: none;
+    background-color: rgb(57, 62, 70);
+}
+
+.search-add-nav .contact-add-container .add-friend-icon{
+    font-size: 12px;
+}
+
+
+/*                               Main                                */
+
+.chats-main {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-top: 12vh;
+}
+
+.chats-nav {
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    overflow-y: scroll;
+    gap: 10px;
+    padding-left: 7px;
+    margin-bottom: 15vh;
+}
+
+.chats-nav .chat-box {
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+    /*     height: 30px; */
+    gap: 5px;
+    padding: 5px 0 5px 5px;
+    cursor: pointer;
+    align-items: end;
+    border-radius: 10px;
+    text-decoration: none;
+    height: 30px;
+}
+
+.chats-nav .chat-box:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: 500ms;
+    background-color: rgba(57, 62, 70, 0.425);
+    width: 96%;
+    padding: 5px 5px 5px 5px;
+}
+
+.chats-nav .chat-box .chat-pfp {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.chats-nav .chat-box .titulo-ult-msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0px 5px;
+    height: 33px;
+    width: 57vw;
+    gap: 5px;
+}
+
+.chats-nav .chat-box .titulo-ult-msg .chat-title {
+    display: flex;
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    max-height: 15px;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    color: rgb(201, 201, 205);
+    word-break: break-all;
+
+}
+
+.chats-nav .chat-box .titulo-ult-msg .last-msg {
+    font-size: 10px;
+    letter-spacing: 0.8px;
+    color: rgb(201, 201, 205);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 145px;
+}
+
+.chats-nav .chat-box .last-msg-date {
+    font-size: 10px;
+    color: rgb(201, 201, 205);
+    padding-left: 5px;
+    width: 50px;
+}
+
+/*                                           Scrollbar                                                 */
+
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+::placeholder{
+    color: #d1d4d8;
+}

@@ -1,0 +1,211 @@
+/* Header */
+
+
+.chat-header {
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    height: 8vh;
+    background-color: #2b2d31;
+    ;
+    align-items: center;
+    z-index: 0;
+    padding: 0 10px;
+}
+
+.chat-header .return-arrow {
+    color: #B5BAC1;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.chat-header .user-chat-pfp {
+    width: 35px;
+    border-radius: 25px;
+}
+
+.chat-header .user-username {
+    font-size: 15px;
+    color: #e6e5e5;
+    padding-left: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.chat-header .icon-container {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 23%;
+/*     background-color: rebeccapurple; */
+    right: 25px;
+    justify-content: space-between;
+    align-items: center;
+    color: #B5BAC1;
+}
+
+.chat-header .icon-container .phone-icon-bubble {
+    display: flex;
+    align-items: center;
+    font-size: 18px ;
+    background-color: #313338;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.chat-header .icon-container .camera-icon-bubble {
+    display: flex;
+    align-items: center;
+    font-size: 18px ;
+    background-color: #313338;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+
+
+
+/* MAIN */
+
+.chat-main {
+    display: flex;
+    flex-direction: column;
+    background-color: #313338;
+    margin-top: 8vh;
+    padding-top: 1vh;
+    width: 100vw;
+    height: 83vh;
+    overflow-y: scroll;
+    gap: 10px;
+}
+
+.chat-main .message-box {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 12px;
+}
+
+.chat-main .message-box .user-pfp {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.chat-main .message-box .name-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.chat-main .message-box .name-text-container .username-box {
+    display: flex;
+    flex-direction: row;
+    /*     background-color: #FFFFFF; */
+    width: 70vw;
+    height: 20px;
+    gap: 10px;
+}
+
+.chat-main .message-box .name-text-container .username-box .username {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.chat-main .message-box .name-text-container .username-box .date {
+    font-size: 10px;
+    padding-top: 1%;
+    color: #848689;
+    font-weight: 400;
+}
+
+.chat-main .message-box .name-text-container .text-box {
+    max-width: 70vw;
+    /*     background-color: rebeccapurple; */
+}
+
+.chat-main .message-box .name-text-container .text-box .message-text {
+    font-size: 12px;
+    color: #cacbce;
+    font-weight: 500;
+}
+
+
+
+/* FOOTER */
+
+
+
+.chat-footer{
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    min-height: 8vh;
+    max-height: 32vh;
+    width: 100vw;
+    background-color: #2b2d31;
+}
+
+.chat-footer .footer-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px;
+    color: #B5BAC1;
+}
+
+.chat-footer .footer-form .add-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #41444a;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.chat-footer .footer-form .add-box .add-cross{
+    font-size: 15px;
+    /* background-color: rebeccapurple; */
+}
+
+.chat-footer .footer-form .message-input{
+    text-decoration: none;
+    outline: none;
+    background-color: #41444a;
+    color: #B5BAC1;
+    font-weight: 500;
+    padding: 5px 10px 10px 10px;
+    margin: 0 10px;
+    width: 62vw;
+    height: 3vh;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    scroll-behavior: smooth;
+}
+
+.chat-footer .footer-form .send-icon{
+    font-size: 20px;
+    padding: 6px;
+}
+
+.chat-footer .footer-form .send-icon-bttn{
+    display: flex ;
+    background-color: #41444a;
+    color: #B5BAC1;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* ::-webkit-scrollbar{
+    width: 0px;
+    scroll-behavior: smooth;
+} */

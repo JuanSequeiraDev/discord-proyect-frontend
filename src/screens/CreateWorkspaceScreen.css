@@ -1,0 +1,124 @@
+.create-workspace-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+    background-color: #313338;
+    width: 100vw;
+    height: 100vh;
+}
+
+.create-workspace-main .to-home-arrow {
+    display: flex;
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    text-decoration: none;
+}
+
+.create-workspace-main .create-workspace-title {
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    padding-bottom: 2%;
+}
+
+.create-workspace-main .create-workspace-span {
+    display: flex;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #b5bac1ac;
+    margin-bottom: 10%;
+}
+
+.create-workspace-main .workspace-img-insert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: white dashed 2px;
+    border-spacing: 2px;
+    padding: 13px 15px;
+    border-radius: 50%;
+    font-weight: 400;
+    gap: 4px;
+    font-size: 11px;
+    color: #b5bac1ac;
+    margin-bottom: 5px;
+}
+
+/* .create-workspace-main .workspace-img-insert .proximamente {
+    position: fixed;
+    color: red;
+    font-weight: 800;
+    top: 33%;
+} */
+
+.create-workspace-main .workspace-img-insert .img-insert {
+    font-size: 20px;
+}
+
+.workspace-img-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.create-workspace-main  .workspace-img-input {
+    position: absolute;
+/*     background-color: rgba(102, 51, 153, 0.212); */
+    top: 26%;
+    left: 25%;
+    outline: none;
+    color: transparent;
+    width: 50vw;
+    height: 15vh;
+}
+
+.create-workspace-main .workspace-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* FORM */
+
+.create-workspace-main .workspace-form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.create-workspace-main .workspace-form .workspace-label {
+    font-size: 12px;
+    color: #B5BAC1;
+    font-weight: 600;
+    padding-bottom: 1.5%;
+}
+
+.create-workspace-main .workspace-form .workspace-input {
+    width: 270px;
+    height: 15px;
+    font-size: 12px;
+    border-radius: 10px;
+    background-color: #1E1F22;
+    padding: 10px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: white;
+    margin-bottom: 1%;
+}
+
+.create-workspace-main .workspace-form .workspace-form-span {
+    font-size: 10px;
+    padding: 0 0 4% 0;
+    color: #909296b4;
+    font-weight: 500;
+}
+
+.create-workspace-main .workspace-form .workspace-form-bttn {
+    width: 290px;
+    height: 33px;
+    font-size: 12px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+}

@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    color: #FFFFFF;
+}
+
+.register-screen {
+    display: flex;
+    background-color: #313338;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    justify-content: center;
+}
+
+.register-screen .discord-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 4vh;
+    font-size: 35px;
+    gap: 5px;
+}
+
+.register-screen .discord-banner .discord-title-register {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.register-screen .form-section {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 15vh 0 0 0;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+}
+
+.register-screen .form-section .link-back-register {
+    display: flex;
+    position: absolute;
+    top: 5.5vh;
+    left: 10vw;
+    text-decoration: none;
+    outline: none;
+    color: #B5BAC1;
+}
+
+.register-screen .form-section .register-title {
+    text-align: center;
+    color: white;
+    letter-spacing: 0px;
+    padding-bottom: 15px;
+}
+
+.register-screen .form-section .advice-span{
+    color: #B5BAC1;
+    font-size: 8px;
+    padding: 0 2%;
+}
+
+.register-screen .form-section .register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2vh;
+}
+
+.register-screen .form-section .register-form .field-container-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+
+}
+
+.register-screen .form-section .register-form .field-container-div .field-label {
+    font-size: 12px;
+    color: #B5BAC1;
+    width: 73vw;
+}
+
+.register-screen .form-section .register-form .field-container-div .register-input {
+    width: 73vw;
+    height: 15px;
+    font-size: 12px;
+    border-radius: 10px;
+    background-color: #1E1F22;
+    padding: 10px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.register-screen .form-section .register-form .continue-register-bttn{
+    width: 80vw;
+    font-weight: 400;
+    height: 5.5vh;
+    background-color: #5865F2;
+    border: none;
+    border-radius: 5px;
+    color: #B5BAC1;
+}
+
+/* LOGIN LINKS */
+
+.register-screen .form-section .register-form .to-register-link{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(97, 162, 209);
+    margin-right: 41vw;
+}
+
+.register-screen .form-section .register-form .to-forgot-password-link{
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 32vw;
+    color: rgb(97, 162, 209);
+}
+
+
+@media screen and (min-width: 650px) {
+    .register-screen .discord-banner {
+        font-size: 60px;
+    }
+    
+    .register-screen .discord-banner .discord-title-register {
+        font-size: 45px;
+    }
+
+    .register-screen .form-section {
+        padding: 15vh 0 0 0;
+    }
+
+    .register-screen .form-section .link-back-register {
+        font-size: 30px;
+    }
+    
+    .register-screen .form-section .register-title {
+        font-size: 40px;
+    }
+    
+    .register-screen .form-section .advice-span{
+        font-size: 13px;
+    }
+
+    .register-screen .form-section .register-form .field-container-div .field-label {
+        font-size: 18px;
+        width: 60vw;
+    }
+    
+    .register-screen .form-section .register-form .field-container-div .register-input {
+        width: 60vw;
+        height: 4vh;
+        font-size: 18px;
+        padding: 14px;
+    }
+    
+    .register-screen .form-section .register-form .continue-register-bttn{
+        width: 63vw;
+        font-size: 20px;
+    }
+
+    /* LOGIN LINKS */
+    .register-screen .form-section .register-form .to-register-link{
+        margin-right: 43vw;
+        font-size: 15px;
+    }
+    
+    .register-screen .form-section .register-form .to-forgot-password-link{
+        margin-right: 38vw ;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .register-screen .form-section {
+        padding: 20vh 0 0 0;
+    }
+
+    .register-screen .form-section .advice-span{
+        font-size: 15px;
+    }
+    
+    .register-screen .form-section .register-form .continue-register-bttn{
+        width: 63vw;
+        height: 7vh;
+        font-size: 20px;
+    }
+
+    .register-screen .form-section .register-form .field-container-div .register-input {
+        font-size: 21px;
+    }
+
+    /* LOGIN LINKS */
+    .register-screen .form-section .register-form .to-register-link{
+        margin-right: 38vw;
+        font-size: 25px;
+    }
+    
+    .register-screen .form-section .register-form .to-forgot-password-link{
+        margin-right: 32vw;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .register-screen .discord-banner {
+        font-size: 70px;
+    }
+    
+    .register-screen .discord-banner .discord-title-register {
+        font-size: 50px;
+    }
+
+    .register-screen .form-section .link-back-register {
+        font-size: 50px;
+    }
+    
+    .register-screen .form-section .register-title {
+        font-size: 50px;
+    }
+    
+    .register-screen .form-section .advice-span{
+        font-size: 20px;
+    }
+
+    .register-screen .form-section .register-form .field-container-div .field-label {
+        font-size: 23px;
+        width: 60vw;
+    }
+    
+    .register-screen .form-section .register-form .field-container-div .register-input {
+        width: 60vw;
+        height: 4vh;
+        font-size: 23px;
+        padding: 20px;
+    }
+    
+    .register-screen .form-section .register-form .continue-register-bttn{
+        width: 63vw;
+        font-size: 27px;
+    }
+
+    /* LOGIN LINKS */
+    .register-screen .form-section .register-form .to-register-link{
+        margin-right: 43vw;
+        font-size: 28px;
+    }
+    
+    .register-screen .form-section .register-form .to-forgot-password-link{
+        margin-right: 38vw ;
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1850px) {
+    .register-screen .discord-banner {
+        font-size: 80px;
+    }
+    
+    .register-screen .discord-banner .discord-title-register {
+        font-size: 60px;
+    }
+
+    .register-screen .form-section .link-back-register {
+        font-size: 50px;
+    }
+    
+    .register-screen .form-section .register-title {
+        font-size: 60px;
+    }
+    
+    .register-screen .form-section .advice-span{
+        font-size: 25px;
+    }
+
+    .register-screen .form-section .register-form .field-container-div .field-label {
+        font-size: 31px;
+        width: 60vw;
+    }
+    
+    .register-screen .form-section .register-form .field-container-div .register-input {
+        width: 60vw;
+        height: 4vh;
+        font-size: 30px;
+    }
+    
+    .register-screen .form-section .register-form .continue-register-bttn{
+        width: 63vw;
+        font-size: 30px;
+    }
+
+    /* LOGIN LINKS */
+    .register-screen .form-section .register-form .to-register-link{
+        margin-right: 49vw;
+        font-size: 28px;
+    }
+    
+    .register-screen .form-section .register-form .to-forgot-password-link{
+        margin-right: 45vw ;
+        font-size: 28px;
+    }
+}

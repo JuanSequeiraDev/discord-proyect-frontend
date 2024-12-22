@@ -1,0 +1,71 @@
+.sidenav{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    width: 18vw;
+    height: 100vh;
+    gap: 1%;
+    background-color: #1E1F22;
+    z-index: 5;
+}
+
+.chats-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 6.5%;
+    margin: 10px 0 15px 0 ;
+    background-color: rgb(57, 62, 70);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.chats-icon .msg-bubble{
+    font-size: 21px;
+    color: rgb(156, 155, 155);
+}
+
+
+.workspace-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 6%;
+    border-radius: 50%;
+/*     background-color: #2B2D31; */
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.workspace-icon .workspace-img{
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.workspace-icon .workspace-name{
+    font-size: 9px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.sidenav .create-server-bubble{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(57, 62, 70);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.sidenav .create-server-bubble .create-server-icon{
+    color: rgb(156, 155, 155);
+    font-size: 19px;
+}
