@@ -82,14 +82,14 @@ const UserChats = () => {
                                     onChange={handleChange}
                                     type="text" name='username'
                                     className='contact-input'
-                                    placeholder={!errorState.username ? 'pepesito5' : errorState.username}
+                                    placeholder={!errorState.username ? 'Usuario de tu amigo' : errorState.username}
                                 />
                                 <button className='add-friend-bttn' type={Boolean(formState.username) ? 'submit' : 'button'}>
                                     <FaPlus className='add-friend-icon' style={!Boolean(formState.username) ? { 'color': '#222327' } : { 'color': '#B5BAC1' }} />
                                 </button>
                             </form>
                             : <>
-                                <h4 onClick={handleSearchDisplay} className='añadir-amigos'><HiMiniUserPlus className='friend-icon' /> Añadir amigos</h4>
+                                <h4 onClick={handleSearchDisplay} className='añadir-amigos'><HiMiniUserPlus className='friend-icon' /> Invitar amigos</h4>
                             </>
                     }
                 </nav>

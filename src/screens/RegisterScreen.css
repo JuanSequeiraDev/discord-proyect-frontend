@@ -192,7 +192,7 @@
     
     .register-screen .form-section .register-form .continue-register-bttn{
         width: 63vw;
-        height: 7vh;
+        height: 8vh;
         font-size: 20px;
     }
 
@@ -202,13 +202,13 @@
 
     /* LOGIN LINKS */
     .register-screen .form-section .register-form .to-register-link{
-        margin-right: 38vw;
-        font-size: 25px;
+        margin-right: 42vw;
+        font-size: 20px;
     }
     
     .register-screen .form-section .register-form .to-forgot-password-link{
-        margin-right: 32vw;
-        font-size: 25px;
+        margin-right: 37.5vw;
+        font-size: 20px;
     }
 }
 

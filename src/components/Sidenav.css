@@ -3,6 +3,7 @@
     position: absolute;
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;
     left: 0;
     width: 18vw;
     height: 100vh;
@@ -48,12 +49,6 @@
     width: 100%;
     border-radius: 50%;
     cursor: pointer;
-}
-
-.workspace-icon .workspace-name{
-    font-size: 9px;
-    font-weight: 300;
-    text-align: center;
 }
 
 .sidenav .create-server-bubble{
@@ -135,11 +130,7 @@
         justify-content: center;
         cursor: pointer;
         padding: 10px;
-    }
-
-    .sidenav-full .visuals-header .content-box:hover{
-        background-color: #35373C ;
-        transition-duration: 1000;
+        border-radius: 3px;
     }
 
     .sidenav-full .visuals-header .content-box .content-txt{
@@ -147,11 +138,17 @@
         font-weight: 400;
     }
 
+    .sidenav-full .visuals-header .content-box:hover{
+        background-color: #35373C ;
+        transition-duration: 1000;
+    }
+
     /* sidenav footer */
 
     .sidenav-full .user-config-footer{
         display: flex;
         align-items: center;
+        height: 7vh;
         justify-content: space-around;
         flex-direction: row;
         background-color: #323439;
@@ -169,6 +166,156 @@
     }
 
     .sidenav-full .user-config-footer .user-config-settings{
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (min-width:950px){
+    .chats-icon{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .chats-icon .msg-bubble{
+        font-size: 28px;
+    }
+    
+    .workspace-icon{
+        width: 50px;
+        height: 50px;
+    }
+
+    .sidenav .create-server-bubble{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .sidenav .create-server-bubble .create-server-icon{
+        font-size: 22px;
+    }
+
+    .sidenav-full .visuals-header .fake-input-box .fake-input .fake-input-txt{
+        padding: 3px 10px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .chats-icon{
+        width: 60px;
+        height: 60px;
+        margin: 2vh 0 3vh 0 ;
+    }
+    
+    .chats-icon .msg-bubble{
+        font-size: 32px;
+    }
+    
+    .workspace-icon{
+        width: 60px;
+        height: 60px;
+    }
+
+    .sidenav .create-server-bubble{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .sidenav .create-server-bubble .create-server-icon{
+        font-size: 22px;
+    }
+
+    /* sidenav-full-display */
+    .sidenav-full .visuals-header{
+        gap: 10px;
+    }
+
+    .sidenav-full .visuals-header .content-box{
+        padding: 15px;
+    }
+
+    .sidenav-full .visuals-header .content-box .content-txt{
+        font-size: 20px;
+    }
+
+    .sidenav-full .user-config-footer .user-config-pfp{
+        padding: 5px;
+        width: 50px;
+    }
+
+    .sidenav-full .user-config-footer .user-config-username{
+        font-size: 20px;
+    }
+
+    .sidenav-full .user-config-footer .user-config-settings{
+        font-size: 35px;
+    }
+
+    .sidenav-full .visuals-header .fake-input-box .fake-input .fake-input-txt{
+        padding: 7px 40px;
+        font-size: 15px;
+    }
+}
+
+
+
+@media screen and (min-width: 1800px){
+    .chats-icon{
+        width: 70px;
+        height: 70px;
+        margin: 2vh 0 4vh 0 ;
+    }
+    
+    .chats-icon .msg-bubble{
+        font-size: 35px;
+    }
+    
+    .workspace-icon{
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+    }
+
+    .sidenav .create-server-bubble{
+        width: 70px;
+        height: 70px;
+    }
+    
+    .sidenav .create-server-bubble .create-server-icon{
+        font-size: 27px;
+    }
+
+    /* sidenav-full-display */
+    .sidenav-full .visuals-header .fake-input-box{
+        margin-top: 2vh;
+    }
+    
+    .sidenav-full .visuals-header .fake-input-box .fake-input .fake-input-txt{
+        padding: 7px 80px;
+        font-size: 20px;
+    }
+    
+    .sidenav-full .visuals-header{
+        gap: 10px;
+    }
+
+    .sidenav-full .visuals-header .content-box{
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .sidenav-full .visuals-header .content-box .content-txt{
+        font-size: 22px;
+    }
+
+    .sidenav-full .user-config-footer .user-config-pfp{
+        padding: 5px;
+        width: 60px;
+    }
+
+    .sidenav-full .user-config-footer .user-config-username{
         font-size: 20px;
     }
 }

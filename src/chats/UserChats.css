@@ -13,7 +13,7 @@
     width: 100vw;
     height: 8vh;
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     position: fixed;
     top: 0;
     border-bottom: 1.5px solid #222327;
@@ -22,8 +22,8 @@
     overflow-x: hidden;
 }
 
-.mensajes {
-    font-size: 13px;
+.chats-header .mensajes {
+    font-size: 16px;
     letter-spacing: 1.2px;
 }
 
@@ -147,7 +147,6 @@
     transition-duration: 500ms;
     background-color: rgba(57, 62, 70, 0.425);
     width: 96%;
-    padding: 5px 5px 5px 5px;
 }
 
 .chats-nav .chat-box .chat-pfp {
@@ -230,7 +229,7 @@
 
     .chats-header {
         height: 10vh;
-        padding: 18px;
+        padding: 18px 18px 0 18px;
         border-bottom: 2px solid rgba(57, 62, 70, 0.425);
         /*     background-color: aquamarine; */
     }
@@ -251,14 +250,13 @@
     }
 
     .search-add-nav .search-icon .lupa {
-        color: gainsboro;
         font-size: 15px;
     }
 
     .search-add-nav .añadir-amigos {
         font-size: 15px;
         width: 50vw;
-        height: 5vh;
+        height: 4vh;
     }
 
     .search-add-nav .añadir-amigos .friend-icon {
@@ -296,13 +294,12 @@
         display: flex;
         flex-direction: column;
         width: 65vw;
-        margin-top: 16vh;
+        margin-top: 14vh;
         /*     background-color: rebeccapurple; */
     }
 
     .chats-nav {
         gap: 10px;
-        padding-top: 10px;
         padding-left: 1vw;
     }
 
@@ -312,11 +309,6 @@
         padding: 8px 0 8px 8px;
         border-radius: 10px;
         text-decoration: none;
-    }
-
-    .chats-nav .chat-box:hover {
-        gap: 8px;
-        padding: 8px 0 8px 8px;
     }
 
     .chats-nav .chat-box .chat-pfp {
@@ -346,5 +338,267 @@
         font-size: 11px;
         padding-left: 5px;
         width: 50px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    /*                           Header                             */
+
+    .chats-header {
+        height: 10vh;
+        padding: 18px 18px 0 18px;
+        border-bottom: 2px solid rgba(57, 62, 70, 0.425);
+        /*     background-color: aquamarine; */
+    }
+
+    .chats-header .mensajes {
+        font-size: 18px;
+        letter-spacing: 1.2px;
+    }
+
+    .search-add-nav {
+        /*     background-color: red; */
+        padding-top: 1vw;
+    }
+
+    .search-add-nav .search-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .search-add-nav .search-icon .lupa {
+        font-size: 15px;
+    }
+
+    .search-add-nav .añadir-amigos {
+        font-size: 15px;
+        width: 50vw;
+        height: 4vh;
+    }
+
+    .search-add-nav .añadir-amigos .friend-icon {
+        font-size: 20px;
+    }
+
+    .search-add-nav .contact-add-container {
+        display: flex;
+        align-items: center;
+        background-color: rgb(57, 62, 70);
+        border-radius: 15px;
+        padding: 8px 20px 8px 20px;
+        width: 40vw;
+    }
+
+    .search-add-nav .contact-add-container .close-form-bttn {
+        background-color: transparent;
+        border: none;
+        color: #B5BAC1;
+        font-weight: 500;
+        padding-right: 15px;
+        font-size: 12px;
+    }
+
+    .search-add-nav .contact-add-container .contact-input {
+        width: 35vw;
+        font-size: 14px;
+        border: none;
+        background-color: transparent;
+    }
+
+    /*                               Main                                */
+
+    .chats-nav .chat-box .chat-pfp {
+        width: 32px;
+        height: 32px;
+    }
+
+    .chats-nav .chat-box .titulo-ult-msg {
+        padding: 0 0 0px 5px;
+        height: 50px;
+        width: 45vw;
+        gap: 6px;
+    }
+
+    .chats-nav .chat-box .titulo-ult-msg .chat-title {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .chats-nav .chat-box .titulo-ult-msg .last-msg {
+        font-size: 12px;
+        max-width: 45vw;
+    }
+
+    .chats-nav .chat-box .last-msg-date {
+        font-size: 11px;
+        padding-left: 5px;
+        width: 50px;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    /*                           Header                             */
+    .chats-header{
+        padding: 20px;
+    }
+
+    .chats-header .mensajes {
+        font-size: 25px;
+    }
+
+    .search-add-nav .search-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .search-add-nav .search-icon .lupa {
+        font-size: 20px;
+    }
+
+    .search-add-nav .añadir-amigos {
+        font-size: 20px;
+        width: 50vw;
+        height: 5vh;
+    }
+
+    .search-add-nav .añadir-amigos .friend-icon {
+        font-size: 30px;
+        padding-right: 10px;
+    }
+
+    .search-add-nav .contact-add-container {
+        display: flex;
+        align-items: center;
+        background-color: rgb(57, 62, 70);
+        border-radius: 15px;
+        padding: 8px 20px 8px 20px;
+        width: 50vw;
+    }
+
+    .search-add-nav .contact-add-container .close-form-bttn {
+        padding-right: 15px;
+        font-size: 20px;
+    }
+
+    .search-add-nav .contact-add-container .contact-input {
+        width: 45vw;
+        font-size: 18px;
+    }
+
+    .search-add-nav .contact-add-container .add-friend-icon {
+        font-size: 18px;
+    }
+
+    /*                               Main                                */
+
+    .chats-nav {
+        margin-top: 1vh ;
+        gap: 20px;
+        padding-left: 1vw;
+    }
+
+    .chats-nav .chat-box {
+        align-items: center;
+        gap: 13px;
+        padding: 13px 0 13px 13px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    .chats-nav .chat-box .chat-pfp {
+        width: 40px;
+        height: 40px;
+    }
+
+    .chats-nav .chat-box .titulo-ult-msg {
+        width: 50vw;
+        gap: 10px;
+        /* background-color: rebeccapurple; */
+    }
+
+    .chats-nav .chat-box .titulo-ult-msg .chat-title {
+        font-size: 16px;
+    }
+
+    .chats-nav .chat-box .titulo-ult-msg .last-msg {
+        font-size: 13px;
+        max-width: 50vw;
+    }
+
+    .chats-nav .chat-box .last-msg-date {
+        font-size: 12px;
+    }
+}
+
+
+
+@media screen and (min-width: 1800px) {
+    /*                           Header                             */
+
+    .chats-header .mensajes {
+        font-size: 30px;
+    }
+
+    .search-add-nav .search-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .search-add-nav .search-icon .lupa {
+        font-size: 24px;
+    }
+
+    .search-add-nav .añadir-amigos .friend-icon {
+        font-size: 30px;
+        padding-right: 10px;
+    }
+
+    .search-add-nav .contact-add-container {
+        padding: 15px 20px 15px 20px;
+    }
+
+    .search-add-nav .contact-add-container .contact-input {
+        font-size: 20px;
+    }
+
+    /*                               Main                                */
+
+    .chats-nav {
+        gap: 20px;
+        padding-left: 1vw;
+    }
+
+    .chats-nav .chat-box {
+        gap: 15px;
+        padding: 15px 0 15px 15px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    .chats-nav .chat-box .chat-pfp {
+        width: 50px;
+        height: 50px;
+    }
+
+    .chats-nav .chat-box .titulo-ult-msg {
+        gap: 15px;
+        max-width: 50vw;
+    }
+
+    .chats-nav .chat-box .titulo-ult-msg .chat-title {
+        font-size: 18px;
+        max-width: 45vw;
+    }
+
+    .chats-nav .chat-box .titulo-ult-msg .last-msg {
+        font-size: 16px;
+        max-width: 45vw;
+    }
+
+    .chats-nav .chat-box .last-msg-date {
+        font-size:  15px;
+        text-align: end;
+        width: 5vw;
     }
 }
