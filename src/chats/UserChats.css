@@ -10,6 +10,7 @@
 
 .chats-header {
     display: flex;
+    width: 100vw;
     height: 8vh;
     flex-direction: column;
     padding: 10px;
@@ -17,7 +18,8 @@
     top: 0;
     border-bottom: 1.5px solid #222327;
     z-index: 3;
-    /* background-color: #101116; */
+    background-color: #2B2D31;
+    overflow-x: hidden;
 }
 
 .mensajes {
@@ -28,7 +30,6 @@
 .search-add-nav {
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 100%;
     flex-direction: row;
     gap: 10px;
@@ -43,8 +44,8 @@
     height: 25px;
     background-color: rgb(57, 62, 70);
     border-radius: 50%;
-    position: fixed;
-    left: 22vw;
+    /* position: fixed;
+    left: 22vw; */
 }
 
 .search-add-nav .search-icon .lupa {
@@ -65,45 +66,43 @@
     height: 25px;
     border-radius: 25px;
     cursor: pointer;
-    margin-left: 12vw;
 }
 
 .search-add-nav .añadir-amigos .friend-icon {
     font-size: 15px;
 }
 
-.search-add-nav .contact-add-container{
+.search-add-nav .contact-add-container {
     display: flex;
     align-items: center;
     background-color: rgb(57, 62, 70);
     border-radius: 15px;
     padding: 7px 10px 7px 10px;
-    margin-left: 12vw;
     width: 180px;
 }
 
-.search-add-nav .contact-add-container .close-form-bttn{
+.search-add-nav .contact-add-container .close-form-bttn {
     background-color: transparent;
     border: none;
     color: #B5BAC1;
-    font-weight: 500; 
+    font-weight: 500;
     padding-right: 5px;
     font-size: 10px;
 }
 
-.search-add-nav .contact-add-container .contact-input{
+.search-add-nav .contact-add-container .contact-input {
     color: #B5BAC1;
     border: none;
     background-color: transparent;
 }
 
-.search-add-nav .contact-add-container .add-friend-bttn{
+.search-add-nav .contact-add-container .add-friend-bttn {
     padding-left: 5%;
     border: none;
     background-color: rgb(57, 62, 70);
 }
 
-.search-add-nav .contact-add-container .add-friend-icon{
+.search-add-nav .contact-add-container .add-friend-icon {
     font-size: 12px;
 }
 
@@ -115,6 +114,7 @@
     flex-direction: column;
     width: 80vw;
     margin-top: 12vh;
+    overflow-x: hidden;
 }
 
 .chats-nav {
@@ -198,7 +198,8 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 1px;
+    width: 5px;
+    scroll-behavior: smooth;
 }
 
 /* Track */
@@ -216,6 +217,134 @@
     background: transparent;
 }
 
-::placeholder{
+::placeholder {
     color: #d1d4d8;
+}
+
+
+
+/*                      MEDIA QUERIES                         */
+
+@media screen and (min-width: 650px) {
+    /*                           Header                             */
+
+    .chats-header {
+        height: 10vh;
+        padding: 18px;
+        border-bottom: 2px solid rgba(57, 62, 70, 0.425);
+        /*     background-color: aquamarine; */
+    }
+
+    .chats-header .mensajes {
+        font-size: 18px;
+        letter-spacing: 1.2px;
+    }
+
+    .search-add-nav {
+        /*     background-color: red; */
+        padding-top: 1vw;
+    }
+
+    .search-add-nav .search-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .search-add-nav .search-icon .lupa {
+        color: gainsboro;
+        font-size: 15px;
+    }
+
+    .search-add-nav .añadir-amigos {
+        font-size: 15px;
+        width: 50vw;
+        height: 5vh;
+    }
+
+    .search-add-nav .añadir-amigos .friend-icon {
+        font-size: 20px;
+    }
+
+    .search-add-nav .contact-add-container {
+        display: flex;
+        align-items: center;
+        background-color: rgb(57, 62, 70);
+        border-radius: 15px;
+        padding: 8px 20px 8px 20px;
+        width: 40vw;
+    }
+
+    .search-add-nav .contact-add-container .close-form-bttn {
+        background-color: transparent;
+        border: none;
+        color: #B5BAC1;
+        font-weight: 500;
+        padding-right: 15px;
+        font-size: 12px;
+    }
+
+    .search-add-nav .contact-add-container .contact-input {
+        width: 35vw;
+        font-size: 14px;
+        border: none;
+        background-color: transparent;
+    }
+
+    /*                               Main                                */
+
+    .chats-main {
+        display: flex;
+        flex-direction: column;
+        width: 65vw;
+        margin-top: 16vh;
+        /*     background-color: rebeccapurple; */
+    }
+
+    .chats-nav {
+        gap: 10px;
+        padding-top: 10px;
+        padding-left: 1vw;
+    }
+
+    .chats-nav .chat-box {
+        align-items: center;
+        gap: 8px;
+        padding: 8px 0 8px 8px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    .chats-nav .chat-box:hover {
+        gap: 8px;
+        padding: 8px 0 8px 8px;
+    }
+
+    .chats-nav .chat-box .chat-pfp {
+        width: 32px;
+        height: 32px;
+    }
+
+    .chats-nav .chat-box .titulo-ult-msg {
+        padding: 0 0 0px 5px;
+        height: 33px;
+        width: 45vw;
+        /* background-color: rebeccapurple; */
+        gap: 5px;
+    }
+
+    .chats-nav .chat-box .titulo-ult-msg .chat-title {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .chats-nav .chat-box .titulo-ult-msg .last-msg {
+        font-size: 12px;
+        max-width: 45vw;
+    }
+
+    .chats-nav .chat-box .last-msg-date {
+        font-size: 11px;
+        padding-left: 5px;
+        width: 50px;
+    }
 }

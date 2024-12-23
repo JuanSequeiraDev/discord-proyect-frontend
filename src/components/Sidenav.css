@@ -11,12 +11,16 @@
     z-index: 5;
 }
 
+.sidenav-full{
+    display: none;
+}
+
 .chats-icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
-    height: 6.5%;
+    width: 42px;
+    height: 42px;
     margin: 10px 0 15px 0 ;
     background-color: rgb(57, 62, 70);
     border-radius: 50%;
@@ -28,16 +32,14 @@
     color: rgb(156, 155, 155);
 }
 
-
 .workspace-icon{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70%;
-    height: 6%;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
-/*     background-color: #2B2D31; */
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -59,8 +61,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 42px;
+    height: 42px;
     background-color: rgb(57, 62, 70);
-    padding: 10px;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -68,4 +71,104 @@
 .sidenav .create-server-bubble .create-server-icon{
     color: rgb(156, 155, 155);
     font-size: 19px;
+}
+
+
+/* MediaQueries */
+
+@media screen and (min-width:550px){
+    .sidenav{
+        width: 10vw;
+    }
+
+    /* Sidenav full-resolution */
+
+    .sidenav-full{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 10vw;
+        width: 25vw;
+        height: 100vh;
+        z-index: 20;
+        background-color: #242529;
+        justify-content: space-between;
+    }
+
+    /* sidenav header */
+
+    .sidenav-full .visuals-header{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .sidenav-full .visuals-header .fake-input-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2vh;
+        border-bottom: #1E1F22 1.5px solid;
+    }
+
+    .sidenav-full .visuals-header .fake-input-box .fake-input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        background-color: #1E1F22;
+    }
+
+    .sidenav-full .visuals-header .fake-input-box .fake-input .fake-input-txt{
+        font-size: 12px;
+        color: #B5BAC1;
+        font-weight: 400;
+    }
+
+    .sidenav-full .visuals-header .content-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .sidenav-full .visuals-header .content-box:hover{
+        background-color: #35373C ;
+        transition-duration: 1000;
+    }
+
+    .sidenav-full .visuals-header .content-box .content-txt{
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    /* sidenav footer */
+
+    .sidenav-full .user-config-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        background-color: #323439;
+        border-top: #1E1F22 3px solid;
+    }
+
+    .sidenav-full .user-config-footer .user-config-pfp{
+        padding: 5px;
+        width: 35px;
+        border-radius: 50%;
+    }
+
+    .sidenav-full .user-config-footer .user-config-username{
+        font-size: 15px;
+    }
+
+    .sidenav-full .user-config-footer .user-config-settings{
+        font-size: 20px;
+    }
 }
