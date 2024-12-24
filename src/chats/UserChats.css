@@ -493,7 +493,7 @@
     .chats-nav .chat-box {
         align-items: center;
         gap: 13px;
-        padding: 13px 0 13px 13px;
+        padding: 15px;
         border-radius: 10px;
         text-decoration: none;
     }
