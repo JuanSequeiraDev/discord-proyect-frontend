@@ -9,6 +9,7 @@ import { FaHashtag } from "react-icons/fa";
 import useForm from '../hooks/useForm'
 import { FaPlus } from "react-icons/fa";
 import Form from '../components/Form'
+import { FaTrashCan } from "react-icons/fa6";
 
 
 
@@ -120,13 +121,14 @@ const WorkspaceScreen = () => {
                 name: 'username',
                 id: "username",
                 type: "text",
-                className: "invite-friend-input"
+                className: "invite-friend-input",
+                placeholder: "pepesito05"
             },
             field_container_props: {
                 className: "invite-friend-div"
             },
             field_label: {
-                label_text: usernameErrorState.username ? `Nombre de usuario - ${usernameErrorState.username}` : 'Nombre de usuario',
+                label_text: usernameErrorState.username ? `NOMBRE DE USUARIO - ${usernameErrorState.username}` : 'NOMBRE DE USUARIO',
                 label_props: {
                     name: "username",
                     className: "invite-friend-label",
@@ -172,8 +174,9 @@ const WorkspaceScreen = () => {
     }
 
 
+
     return (
-        <>
+        <main className='main'>
             <Sidenav /> {/* Agregar un visual a que canal esta seleccionado */}
             <header className='workspace-header'>
                 <h3 className='mensajes text'>{workspaceObj.workspace_name}</h3>
@@ -238,7 +241,7 @@ const WorkspaceScreen = () => {
                 </nav>
             </main>
 
-        </>
+        </main>
     )
 }
 

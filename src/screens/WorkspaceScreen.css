@@ -2,7 +2,7 @@
 
 .workspace-header {
     display: flex;
-    height: 8vh;
+    height: 12vh;
     width: 82vw;
     left: 18vw;
     top: 0;
@@ -33,12 +33,12 @@
 .workspace-header .create-add-nav .create-channel-box {
     display: flex;
     justify-content: center;
-    height: 17px;
-    width: 180px;
+    height: 4vh;
+    width: 70vw;
     background-color: rgb(57, 62, 70);
-    border: #222327 solid 2px;
     padding: 3px;
-    border-radius: 15px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .workspace-header .create-add-nav .create-channel-box .create-channel-span {
@@ -48,9 +48,10 @@
 
 .workspace-header .create-add-nav .invite-icon {
     background-color: rgb(57, 62, 70);
-    border: #222327 solid 2px;
-    padding: 5px;
-    font-size: 17px;
+    width: 28px;
+    height: 28px;
+    padding: 2%;
+    cursor: pointer;
     border-radius: 50%;
 }
 
@@ -63,7 +64,7 @@
     display: flex;
     flex-direction: row;
     position: absolute;
-    z-index: 12;
+    z-index: 30;
     top: 0;
     left: -18vw;
     width: 100vw;
@@ -81,7 +82,7 @@
 }
 
 /* FORM HEADER */
-.create-add-nav .form-deployment-bg .channel-name-form .create-channel-header{
+.create-add-nav .form-deployment-bg .channel-name-form .create-channel-header {
     display: flex;
     flex-direction: row;
     height: 8vh;
@@ -92,19 +93,20 @@
     margin-bottom: 3vh;
 }
 
-.create-add-nav .form-deployment-bg .channel-name-form  .create-channel-header .close-form-bttn {
+.create-add-nav .form-deployment-bg .channel-name-form .create-channel-header .close-form-bttn {
     background-color: transparent;
     border: none;
-    font-weight: 400; 
+    cursor: pointer;
+    font-weight: 400;
     font-size: 17px;
 }
 
-.create-add-nav .form-deployment-bg .channel-name-form  .create-channel-header .create-channel-title {
+.create-add-nav .form-deployment-bg .channel-name-form .create-channel-header .create-channel-title {
     font-weight: 500;
     padding-left: 10vw;
 }
 
-.create-add-nav .form-deployment-bg .channel-name-form  .create-channel-header .create-channel-bttn {
+.create-add-nav .form-deployment-bg .channel-name-form .create-channel-header .create-channel-bttn {
     width: 50px;
     height: 4vh;
     text-decoration: none;
@@ -115,6 +117,7 @@
     font-weight: 500;
     letter-spacing: 0.5px;
     margin-left: 5vw;
+    cursor: pointer;
 }
 
 /* FORM INPUT */
@@ -162,7 +165,7 @@
 
 /* FORM HEADER */
 
-.create-add-nav .invite-friend-form .invite-friend-header{
+.create-add-nav .invite-friend-form .invite-friend-header {
     display: flex;
     flex-direction: row;
     height: 8vh;
@@ -178,19 +181,20 @@
     background-color: #313338;
 }
 
-.create-add-nav .invite-friend-form  .invite-friend-header .close-form-bttn {
+.create-add-nav .invite-friend-form .invite-friend-header .close-form-bttn {
     background-color: transparent;
     border: none;
-    font-weight: 400; 
+    font-weight: 400;
     font-size: 17px;
+    cursor: pointer;
 }
 
-.create-add-nav .invite-friend-form  .invite-friend-header .invite-friend-title {
+.create-add-nav .invite-friend-form .invite-friend-header .invite-friend-title {
     font-weight: 500;
     padding-left: 10vw;
 }
 
-.create-add-nav .invite-friend-form  .invite-friend-header .invite-friend-bttn {
+.create-add-nav .invite-friend-form .invite-friend-header .invite-friend-bttn {
     width: 50px;
     height: 4vh;
     text-decoration: none;
@@ -202,6 +206,7 @@
     letter-spacing: 0.5px;
     margin-left: 5vw;
     margin-right: 2vw;
+    cursor: pointer;
 }
 
 
@@ -217,7 +222,7 @@
 
 /* FORM DIV */
 
-.create-add-nav .invite-friend-form .invite-friend-div .invite-friend-label{
+.create-add-nav .invite-friend-form .invite-friend-div .invite-friend-label {
     font-size: 13px;
     font-weight: 500;
     color: #d1d4d8;
@@ -225,7 +230,7 @@
     width: 270px;
 }
 
-.create-add-nav .invite-friend-form .invite-friend-div .invite-friend-input{
+.create-add-nav .invite-friend-form .invite-friend-div .invite-friend-input {
     width: 270px;
     height: 15px;
     font-size: 13px;
@@ -248,17 +253,19 @@
     display: flex;
     flex-direction: column;
     position: absolute;
+    overflow: hidden;
     top: 11.5vh;
     left: 18vw;
     width: 82vw;
-    height: 92vh;
+    height: 80vh;
     background-color: #2B2D31;
 }
 
 .workspace-main .workspace-channels-nav {
     display: flex;
     flex-direction: column;
-    max-height: 92vh;
+    max-height: 75vh;
+    overflow-x: hidden;
     overflow-y: scroll;
     gap: 10px;
     margin-top: 2vh;
@@ -268,7 +275,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 70vw;
+    width: 75vw;
     /* background-color: #222327; */
     margin-left: 3vw;
     padding: 6px 10px;
@@ -289,4 +296,421 @@
     font-family: "Noto Sans Warang Citi", serif;
     font-style: normal;
     letter-spacing: 1px;
+    width: 100%;
+}
+
+.workspace-main .workspace-channels-nav .channel-box .delete-channel-icon{
+    font-size: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/*                                                      MEDIAQUERIES                                                             */
+
+
+@media screen and (min-width: 700px) {
+    .workspace-header {
+        width: 65vw;
+        height: 11vw;
+        left: 35.1vw;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .mensajes {
+        font-size: 15px;
+        letter-spacing: 1.2px;
+        font-weight: 400;
+    }
+
+    .workspace-header .create-add-nav {}
+
+    .workspace-header .create-add-nav .create-channel-box {
+        align-items: center;
+        height: 5vh;
+        width: 55vw;
+        padding: 5px;
+    }
+
+    .workspace-header .create-add-nav .create-channel-box .create-channel-span {
+        font-size: 15px;
+    }
+
+    .workspace-header .create-add-nav .invite-icon {
+        width: 35px;
+        height: 35px;
+        padding: 7px;
+    }
+
+
+    /* Channel-Form desplegado */
+
+    .create-add-nav .form-deployment-bg {
+        justify-content: center;
+        z-index: 50;
+        left: -35vw;
+        width: 100vw;
+    }
+
+    .create-add-nav .form-deployment-bg .channel-name-form {
+        background-color: #313338;
+        border: #444549 solid 3px;
+        width: 80vw;
+        height: 30vh;
+    }
+
+    /* CHANNEL-FORM HEADER */
+    .create-add-nav .form-deployment-bg .channel-name-form .create-channel-header {}
+
+    .create-add-nav .form-deployment-bg .channel-name-form .create-channel-header .close-form-bttn {
+        font-size: 18px;
+    }
+
+    .create-add-nav .form-deployment-bg .channel-name-form .create-channel-header .create-channel-title {
+
+        font-size: 20px;
+    }
+
+    .create-add-nav .form-deployment-bg .channel-name-form .create-channel-header .create-channel-bttn {
+        width: 8vw;
+        font-size: 16px;
+    }
+
+    /* FORM INPUT */
+
+    .create-add-nav .form-deployment-bg .channel-name-form .channel-name-label {
+        font-size: 14px;
+        width: 50vw;
+    }
+
+    .create-add-nav .form-deployment-bg .channel-name-form .channel-name-input {
+        width: 60vw;
+        height: 6vh;
+        font-size: 14px;
+    }
+
+
+
+    /* FORM AÑADIR AMIGOS DESPLEGADO */
+
+    .create-add-nav .invite-friend-form {
+        align-items: center;
+        z-index: 50;
+        left: -35vw;
+        width: 100vw;
+    }
+
+    /* FORM HEADER */
+
+    .create-add-nav .invite-friend-form .invite-friend-header {
+        width: 80vw;
+        border-bottom: #444549 solid 3px;
+        border-left: #444549 solid 3px;
+        border-right: #444549 solid 3px;
+    }
+
+    .create-add-nav .invite-friend-form .invite-friend-header .close-form-bttn {
+        background-color: transparent;
+        border: none;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .create-add-nav .invite-friend-form .invite-friend-header .invite-friend-title {
+        font-size: 20px;
+    }
+
+    .create-add-nav .invite-friend-form .invite-friend-header .invite-friend-bttn {
+        width: 7vw;
+        font-size: 15px;
+    }
+
+
+    .create-add-nav .invite-friend-form .invite-friend-div {
+        display: flex;
+        width: 80vw;
+        border-bottom: #444549 solid 3px;
+        border-left: #444549 solid 3px;
+        border-right: #444549 solid 3px;
+    }
+
+    /* FORM DIV */
+
+    .create-add-nav .invite-friend-form .invite-friend-div .invite-friend-label {
+        font-size: 15px;
+        width: 50vw;
+    }
+
+    .create-add-nav .invite-friend-form .invite-friend-div .invite-friend-input {
+        width: 60vw;
+        height: 6vh;
+    }
+
+
+
+    /* MAIN */
+
+    .workspace-main {
+        top: 13vh;
+        left: 35vw;
+        width: 65vw;
+    }
+
+    .workspace-main .workspace-channels-nav {
+    }
+
+    .workspace-main .workspace-channels-nav .channel-box {
+        width: 62vw;
+        margin-left: 1vw;
+        padding: 8px 10px;
+    }
+
+    .workspace-main .workspace-channels-nav .channel-box .channel-hashtag {
+        font-size: 18px;
+    }
+
+    .workspace-main .workspace-channels-nav .channel-box .channel-title {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (min-width: 950px) {
+    .workspace-header {
+        height: 8vw;
+    }
+
+    .mensajes {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    .workspace-header{
+        gap: 10px;
+        height: 14vh;
+        padding-left: 20px;
+    }
+
+    .mensajes {
+        font-size: 20px;
+    }
+
+    .workspace-header .create-add-nav {
+        gap: 30px;
+    }
+
+    .workspace-header .create-add-nav .create-channel-box {
+        height: 4.5vh;
+    }
+
+    .workspace-header .create-add-nav .create-channel-box .create-channel-span {
+        font-size: 18px;
+    }
+
+    .workspace-header .create-add-nav .invite-icon {
+        width: 42px;
+        height: 42px;
+        padding: 8px;
+    }
+
+
+    /* CHANNEL-FORM HEADER */
+
+    .create-add-nav .form-deployment-bg .channel-name-form .create-channel-header .close-form-bttn {
+        font-size: 25px;
+    }
+
+    .create-add-nav .form-deployment-bg .channel-name-form .create-channel-header .create-channel-title {
+        font-size: 25px;
+    }
+
+    .create-add-nav .form-deployment-bg .channel-name-form .create-channel-header .create-channel-bttn {
+        font-size: 20px;
+    }
+
+    /* FORM INPUT */
+
+    .create-add-nav .form-deployment-bg .channel-name-form .channel-name-label {
+        font-size: 17px;
+        padding-left: 3vw;
+    }
+
+    .create-add-nav .form-deployment-bg .channel-name-form .channel-name-input {
+        margin-left: 3.5vw;
+        font-size: 15px;
+    }
+
+
+    /* ADD-FRIEND-FORM */
+    .create-add-nav .invite-friend-form .invite-friend-header .close-form-bttn {
+        font-size: 25px;
+    }
+
+    .create-add-nav .invite-friend-form .invite-friend-header .invite-friend-title {
+        font-size: 25px;
+    }
+
+    .create-add-nav .invite-friend-form .invite-friend-header .invite-friend-bttn {
+        font-size: 20px;
+    }
+
+    .create-add-nav .invite-friend-form .invite-friend-div {
+        padding-left: 3vw;
+    }
+
+    /* FORM DIV */
+
+    .create-add-nav .invite-friend-form .invite-friend-div .invite-friend-label {
+        font-size: 17px;
+    }
+
+    .create-add-nav .invite-friend-form .invite-friend-div .invite-friend-input {
+        font-size: 15px;
+    }
+
+    /* MAIN */
+
+    .workspace-main {
+        top: 13vh;
+        left: 35vw;
+        width: 65vw;
+    }
+
+    .workspace-main .workspace-channels-nav {
+    }
+
+    .workspace-main .workspace-channels-nav .channel-box {
+        width: 62vw;
+        margin-left: 1vw;
+        padding: 10px;
+    }
+
+    .workspace-main .workspace-channels-nav .channel-box .channel-hashtag {
+        font-size: 20px;
+    }
+
+    .workspace-main .workspace-channels-nav .channel-box .channel-title {
+        font-size: 14px;
+    }
+
+    .workspace-main .workspace-channels-nav .channel-box .delete-channel-icon{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (min-width: 1800px) {
+    .workspace-header{
+        height: 12vh;
+        gap: 10px;
+        padding-left: 40px;
+    }
+
+    .mensajes {
+        font-size: 26px;
+    }
+
+    .workspace-header .create-add-nav {
+        gap: 40px;
+    }
+
+    .workspace-header .create-add-nav .create-channel-box {
+        height: 4.5vh;
+        width: 50vw;
+    }
+
+    .workspace-header .create-add-nav .create-channel-box .create-channel-span {
+        font-size: 22px;
+    }
+
+    .workspace-header .create-add-nav .invite-icon {
+        width: 52px;
+        height: 52px;
+        padding: 10px;
+    }
+
+
+    /* CHANNEL-FORM HEADER */
+
+    .create-add-nav .form-deployment-bg .channel-name-form{
+        width: 70vw;
+    }
+
+    .create-add-nav .form-deployment-bg .channel-name-form .create-channel-header .close-form-bttn {
+        font-size: 30px;
+    }
+
+    .create-add-nav .form-deployment-bg .channel-name-form .create-channel-header .create-channel-title {
+        font-size: 30px;
+    }
+
+    .create-add-nav .form-deployment-bg .channel-name-form .create-channel-header .create-channel-bttn {
+        font-size: 25px;
+    }
+
+    /* FORM INPUT */
+
+    .create-add-nav .form-deployment-bg .channel-name-form .channel-name-label {
+        font-size: 20px;
+        padding-left: 7vw;
+    }
+
+    .create-add-nav .form-deployment-bg .channel-name-form .channel-name-input {
+        margin-left: 7.5vw;
+        font-size: 18px;
+    }
+
+
+    /* ADD-FRIEND-FORM */
+    .create-add-nav .invite-friend-form .invite-friend-header{
+        width: 70vw;
+    }
+
+    .create-add-nav .invite-friend-form .invite-friend-header .close-form-bttn {
+        font-size: 30px;
+    }
+
+    .create-add-nav .invite-friend-form .invite-friend-header .invite-friend-title {
+        font-size: 30px;
+    }
+
+    .create-add-nav .invite-friend-form .invite-friend-header .invite-friend-bttn {
+        font-size: 25px;
+    }
+
+    .create-add-nav .invite-friend-form .invite-friend-div {
+        width: 70vw;
+        padding-left: 7vw;
+    }
+
+    /* FORM DIV */
+
+    .create-add-nav .invite-friend-form .invite-friend-div .invite-friend-label {
+        font-size: 20px;
+    }
+
+    .create-add-nav .invite-friend-form .invite-friend-div .invite-friend-input {
+        font-size: 18px;
+    }
+
+    /* MAIN */
+    .workspace-main .workspace-channels-nav .channel-box {
+        width: 62vw;
+        margin-left: 1vw;
+        padding: 15px;
+    }
+
+    .workspace-main .workspace-channels-nav .channel-box .channel-hashtag {
+        font-size: 25px;
+    }
+
+    .workspace-main .workspace-channels-nav .channel-box .channel-title {
+        font-size: 16px;
+    }
+
+    .workspace-main .workspace-channels-nav .channel-box .delete-channel-icon{
+        font-size: 20px;
+    }
 }

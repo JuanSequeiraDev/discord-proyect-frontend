@@ -11,6 +11,7 @@ import Form from '../components/Form.jsx';
 import useForm from '../hooks/useForm.jsx';
 import { TbSend2 } from "react-icons/tb";
 import { FaPlus } from "react-icons/fa";
+import Sidenav from '../components/Sidenav.jsx';
 
 
 
@@ -85,7 +86,8 @@ const ChatScreen = () => {
     }
 
     return (
-        <>
+        <main className='chat-screen-container'>
+            <Sidenav/>
             <header className='chat-header'>
                 <Link to={'/home'}><FaArrowLeft className='return-arrow' /></Link>
                 <img className='user-chat-pfp' src={userContactObj.user_pfp} alt="" />
@@ -115,11 +117,11 @@ const ChatScreen = () => {
                         className='send-icon-bttn'
                         type={Boolean(formState.message) ? 'submit' : 'button'}
                     >
-                        <TbSend2 className='send-icon' />
+                        <TbSend2 className='send-icon' style={!Boolean(formState.message) ? { 'background-color': '#41444a' } : { 'background-color': '#5865F2' }}/>
                     </button>
                 </form>
             </footer>
-        </>
+        </main>
     )
 }
 

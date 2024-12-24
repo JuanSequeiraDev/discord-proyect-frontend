@@ -12,6 +12,8 @@ import ChannelChats from './canales/ChannelChats'
 
 function App() {
 
+/* > = CSS REALIZADO */
+
   return (
     <>
       <Routes>
@@ -20,11 +22,11 @@ function App() {
         <Route path='/forgot-password' element={<ForgotPasswordScreen />}></Route> {/* > */}
         <Route path='/reset-password/:reset_token' element={<ResetPasswordScreen />}></Route> {/* > */}
         <Route element={<ProtectedRoute/>}>
-          <Route path='/home' element={<HomeScreen />}></Route>
-          <Route path='/chat/:chatId' element={<ChatScreen />}></Route>
-          <Route path='/create-workspace' element={<CreateWorkspaceScreen/>}></Route>
-          <Route path='/workspace/:workspace_id' element={<WorkspaceScreen/>}></Route>
-          <Route path='/workspace/:channel_name/:channel_id' element={<ChannelChats/>}></Route>
+          <Route path='/home' element={<HomeScreen />}></Route> {/* > */}
+          <Route path='/chat/:chatId' element={<ChatScreen />}></Route> {/* > */}
+          <Route path='/create-workspace' element={<CreateWorkspaceScreen/>}></Route> {/* > */}
+          <Route path='/workspace/:workspace_id' element={<WorkspaceScreen/>}></Route> {/* > */}
+          <Route path='/workspace/:channel_name/:channel_id' element={<ChannelChats/>}></Route> {/* > */}
         </Route>
       </Routes>
     </>

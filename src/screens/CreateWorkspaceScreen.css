@@ -94,10 +94,10 @@
 }
 
 .create-workspace-main .workspace-form .workspace-input {
-    width: 270px;
-    height: 15px;
+    width: 90vw;
+    height: 5vh;
     font-size: 12px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #1E1F22;
     padding: 10px;
     text-decoration: none;
@@ -121,4 +121,175 @@
     border: none;
     border-radius: 15px;
     font-weight: 600;
+}
+
+/*                  MEDIAQUERIES                     */
+
+@media screen and (min-width: 700px) {
+    .create-workspace-main .to-home-arrow {
+        font-size: 20px;
+        top: 10vh;
+    }
+    
+    .create-workspace-main .create-workspace-title {
+        font-size: 30px;
+    }
+    
+    .create-workspace-main .create-workspace-span {
+        font-size: 14px;
+        margin-bottom: 5vh;
+    }
+    
+    .create-workspace-main .workspace-img-insert {
+        padding: 30px 30px;
+        /* border: white dashed 2px; */
+        border-radius: 50%;
+        font-size: 18px;
+    }
+    
+    .create-workspace-main .workspace-img-insert .img-insert {
+        font-size: 30px;
+    }
+    
+    .create-workspace-main  .workspace-img-input {
+        position: absolute;
+    /*     background-color: rgba(102, 51, 153, 0.212); */
+        top: 30vh;
+        left: 30vw;
+        outline: none;
+        color: transparent;
+        width: 40vw;
+        height: 25vh;
+    }
+    
+    .create-workspace-main .workspace-img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    
+    /* FORM */
+    
+    .create-workspace-main .workspace-form {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 25px;
+    }
+    
+    .create-workspace-main .workspace-form .workspace-label {
+        font-size: 16px;
+        color: #B5BAC1;
+        font-weight: 600;
+        padding-bottom: 1vh;
+    }
+    
+    .create-workspace-main .workspace-form .workspace-input {
+        width: 60vw;
+        height: 6vh;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    
+    .create-workspace-main .workspace-form .workspace-form-span {
+        font-size: 11px;
+    }
+    
+    .create-workspace-main .workspace-form .workspace-form-bttn {
+        width: 60vw;
+        height: 7vh;
+        font-size: 16px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+    .create-workspace-main .to-home-arrow {
+        font-size: 30px;
+    }
+
+    .create-workspace-main  .workspace-img-input {
+        /* background-color: rgba(102, 51, 153, 0.245); */
+        top: 30vh;
+        left: 37vw;
+        outline: none;
+        color: transparent;
+        width: 25vw;
+        height: 20vh;
+    }
+    
+}
+
+
+@media screen and (min-width: 1700px) {
+    .create-workspace-main .to-home-arrow {
+        font-size: 40px;
+    }
+    
+    .create-workspace-main .create-workspace-title {
+        font-size: 50px;
+    }
+    
+    .create-workspace-main .create-workspace-span {
+        font-size: 20px;
+        margin-bottom: 5vh;
+    }
+    
+    .create-workspace-main .workspace-img-insert {
+        padding: 60px 60px;
+        /* border: white dashed 2px; */
+        border-radius: 50%;
+        font-size: 21px;
+    }
+    
+    .create-workspace-main .workspace-img-insert .img-insert {
+        font-size: 35px;
+    }
+    
+    .create-workspace-main  .workspace-img-input {
+        top: 30vh;
+        left: 37vw;
+        outline: none;
+        color: transparent;
+        width: 25vw;
+        height: 20vh;
+    }
+    
+    .create-workspace-main .workspace-img{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+    }
+    
+    /* FORM */
+    
+    .create-workspace-main .workspace-form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .create-workspace-main .workspace-form .workspace-label {
+        font-size: 20px;
+        color: #B5BAC1;
+        font-weight: 600;
+        padding-bottom: 1vh;
+    }
+    
+    .create-workspace-main .workspace-form .workspace-input {
+        width: 60vw;
+        height: 6vh;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    
+    .create-workspace-main .workspace-form .workspace-form-span {
+        font-size: 15px;
+    }
+    
+    .create-workspace-main .workspace-form .workspace-form-bttn {
+        width: 60vw;
+        height: 7vh;
+        font-size: 22px;
+    }
 }

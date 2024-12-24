@@ -10,10 +10,10 @@
 
 .chats-header {
     display: flex;
-    width: 100vw;
-    height: 8vh;
+    width: 82vw;
+    height: 12vh;
     flex-direction: column;
-    padding: 10px 10px 0 10px;
+    padding: 10px 10px 10px 10px;
     position: fixed;
     top: 0;
     border-bottom: 1.5px solid #222327;
@@ -85,20 +85,23 @@
     background-color: transparent;
     border: none;
     color: #B5BAC1;
+    cursor: pointer;
     font-weight: 500;
     padding-right: 5px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .search-add-nav .contact-add-container .contact-input {
     color: #B5BAC1;
     border: none;
     background-color: transparent;
+    width: 40vw;
+    margin-right: 5px;
 }
 
 .search-add-nav .contact-add-container .add-friend-bttn {
-    padding-left: 5%;
     border: none;
+    cursor: pointer;
     background-color: rgb(57, 62, 70);
 }
 
@@ -113,7 +116,7 @@
     display: flex;
     flex-direction: column;
     width: 80vw;
-    margin-top: 12vh;
+    padding-top: 12vh;
     overflow-x: hidden;
 }
 
@@ -124,21 +127,19 @@
     overflow-y: scroll;
     gap: 10px;
     padding-left: 7px;
-    margin-bottom: 15vh;
 }
 
 .chats-nav .chat-box {
     display: flex;
     flex-direction: row;
     width: 96%;
-    /*     height: 30px; */
     gap: 5px;
     padding: 5px 0 5px 5px;
     cursor: pointer;
     align-items: end;
     border-radius: 10px;
     text-decoration: none;
-    height: 30px;
+    height: 40px;
 }
 
 .chats-nav .chat-box:hover {
@@ -187,7 +188,8 @@
 }
 
 .chats-nav .chat-box .last-msg-date {
-    font-size: 10px;
+    align-self: flex-end;
+    font-size: 9px;
     color: rgb(201, 201, 205);
     padding-left: 5px;
     width: 50px;
@@ -228,10 +230,9 @@
     /*                           Header                             */
 
     .chats-header {
-        height: 10vh;
+        height: 15vh;
         padding: 18px 18px 0 18px;
         border-bottom: 2px solid rgba(57, 62, 70, 0.425);
-        /*     background-color: aquamarine; */
     }
 
     .chats-header .mensajes {
@@ -245,8 +246,8 @@
     }
 
     .search-add-nav .search-icon {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 
     .search-add-nav .search-icon .lupa {
@@ -256,7 +257,7 @@
     .search-add-nav .añadir-amigos {
         font-size: 15px;
         width: 50vw;
-        height: 4vh;
+        height: 5.5vh;
     }
 
     .search-add-nav .añadir-amigos .friend-icon {
@@ -287,6 +288,7 @@
         border: none;
         background-color: transparent;
     }
+    
 
     /*                               Main                                */
 
@@ -294,7 +296,7 @@
         display: flex;
         flex-direction: column;
         width: 65vw;
-        margin-top: 14vh;
+        margin-top: 5vh;
         /*     background-color: rebeccapurple; */
     }
 
@@ -345,20 +347,14 @@
     /*                           Header                             */
 
     .chats-header {
-        height: 10vh;
-        padding: 18px 18px 0 18px;
+        padding: 14px 14px 0 14px;
         border-bottom: 2px solid rgba(57, 62, 70, 0.425);
         /*     background-color: aquamarine; */
     }
 
     .chats-header .mensajes {
-        font-size: 18px;
+        font-size: 20px;
         letter-spacing: 1.2px;
-    }
-
-    .search-add-nav {
-        /*     background-color: red; */
-        padding-top: 1vw;
     }
 
     .search-add-nav .search-icon {
@@ -372,35 +368,26 @@
 
     .search-add-nav .añadir-amigos {
         font-size: 15px;
-        width: 50vw;
-        height: 4vh;
     }
 
     .search-add-nav .añadir-amigos .friend-icon {
         font-size: 20px;
+        margin-right: 5px;
     }
 
     .search-add-nav .contact-add-container {
-        display: flex;
-        align-items: center;
-        background-color: rgb(57, 62, 70);
-        border-radius: 15px;
-        padding: 8px 20px 8px 20px;
-        width: 40vw;
+        width: 50vw;
+        height: 5vh;
     }
 
     .search-add-nav .contact-add-container .close-form-bttn {
-        background-color: transparent;
-        border: none;
-        color: #B5BAC1;
-        font-weight: 500;
         padding-right: 15px;
-        font-size: 12px;
+        font-size: 17px;
     }
 
     .search-add-nav .contact-add-container .contact-input {
-        width: 35vw;
-        font-size: 14px;
+        width: 40vw;
+        font-size: 18px;
         border: none;
         background-color: transparent;
     }
@@ -438,13 +425,18 @@
 
 
 @media screen and (min-width: 1300px) {
+
     /*                           Header                             */
-    .chats-header{
-        padding: 20px;
+    .chats-header {
+        padding: 20px 20px 0 20px;
     }
 
     .chats-header .mensajes {
         font-size: 25px;
+    }
+
+    .search-add-nav{
+        padding-top: 3px;
     }
 
     .search-add-nav .search-icon {
@@ -459,7 +451,7 @@
     .search-add-nav .añadir-amigos {
         font-size: 20px;
         width: 50vw;
-        height: 5vh;
+        height: 5.5vh;
     }
 
     .search-add-nav .añadir-amigos .friend-icon {
@@ -493,7 +485,7 @@
     /*                               Main                                */
 
     .chats-nav {
-        margin-top: 1vh ;
+        margin-top: 1vh;
         gap: 20px;
         padding-left: 1vw;
     }
@@ -513,21 +505,24 @@
 
     .chats-nav .chat-box .titulo-ult-msg {
         width: 50vw;
-        gap: 10px;
-        /* background-color: rebeccapurple; */
+        gap: 12px;
     }
 
     .chats-nav .chat-box .titulo-ult-msg .chat-title {
-        font-size: 16px;
+        font-size: 17px;
+        
     }
 
     .chats-nav .chat-box .titulo-ult-msg .last-msg {
-        font-size: 13px;
+        font-weight: 300;
+        font-size: 14px;
         max-width: 50vw;
+        
     }
 
     .chats-nav .chat-box .last-msg-date {
-        font-size: 12px;
+        font-size: 13px;
+        width: 70px;
     }
 }
 
@@ -565,39 +560,41 @@
     /*                               Main                                */
 
     .chats-nav {
-        gap: 20px;
+        gap: 40px;
         padding-left: 1vw;
     }
 
     .chats-nav .chat-box {
+        height: 6vh;
         gap: 15px;
-        padding: 15px 0 15px 15px;
+        padding: 15px 15px 15px 15px;
         border-radius: 10px;
         text-decoration: none;
     }
 
     .chats-nav .chat-box .chat-pfp {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 
     .chats-nav .chat-box .titulo-ult-msg {
-        gap: 15px;
+        gap: 18px;
         max-width: 50vw;
+        height: 80px;
     }
 
     .chats-nav .chat-box .titulo-ult-msg .chat-title {
-        font-size: 18px;
+        font-size: 22px;
         max-width: 45vw;
     }
 
     .chats-nav .chat-box .titulo-ult-msg .last-msg {
-        font-size: 16px;
+        font-size: 20px;
         max-width: 45vw;
     }
 
     .chats-nav .chat-box .last-msg-date {
-        font-size:  15px;
+        font-size: 17px;
         text-align: end;
         width: 5vw;
     }

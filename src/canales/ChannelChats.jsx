@@ -11,6 +11,7 @@ import useForm from '../hooks/useForm.jsx';
 import { TbSend2 } from "react-icons/tb";
 import { FaPlus } from "react-icons/fa";
 import { FaHashtag } from "react-icons/fa";
+import Sidenav from '../components/Sidenav.jsx';
 
 
 const ChannelChats = () => {
@@ -75,7 +76,8 @@ const ChannelChats = () => {
     }
 
     return (
-        <>
+        <main className='chat-screen-container'>
+            <Sidenav/>
             <header className='chat-header'>
                 <Link to={'/home'}><FaArrowLeft className='return-arrow' /></Link>
                 <FaHashtag className='channel-hashtag' />
@@ -109,7 +111,7 @@ const ChannelChats = () => {
                     </button>
                 </form>
             </footer>
-        </>
+        </main>
     )
 }
 

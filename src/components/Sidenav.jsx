@@ -1,10 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './Sidenav.css'
 import { TbMessageCircleFilled } from "react-icons/tb";
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { FaPlus } from "react-icons/fa";
 import { userContext } from '../context/UserContext';
 import { IoSettingsSharp } from "react-icons/io5";
+import { FaTrashCan } from "react-icons/fa6";
+import { getAuthenticationHeaders } from '../../fetching';
 
 
 const Sidenav = () => {
@@ -12,7 +14,41 @@ const Sidenav = () => {
     const userWorkspacesObj = JSON.parse(userWorkspaces)
     const userInfoObj = JSON.parse(userInfo)
     const { pathname } = useLocation()
-    console.log(userInfoObj)
+
+
+    /* Delete user */
+    const navigate = useNavigate()
+
+    const [deletePopState, setDeletePopState] = useState(false)
+
+    const handleDeleteDisplay = (e) => {
+        e.preventDefault()
+        if (!Boolean(deletePopState)) {
+            setDeletePopState(true)
+        }
+        else {
+            setDeletePopState(false)
+        }
+    }
+
+    const handleDeleteuser = async (e) => {
+        e.preventDefault()
+        const responseHTTP = await fetch(`${import.meta.env.VITE_URL_API}/api/user/delete/` + userInfoObj.user_id, {
+            method: 'DELETE',
+            headers: getAuthenticationHeaders()
+        })
+
+        const data = await responseHTTP.json()
+        console.log(data)
+        if (!data.ok) {
+            if(data == 'jwt expired'){
+                navigate('/')
+            }
+        }
+        else {
+            navigate('/')
+        }
+    }
 
     return (
         <>
@@ -34,6 +70,9 @@ const Sidenav = () => {
                 <NavLink to={'/create-workspace'} className='create-server-bubble'>
                     <FaPlus className='create-server-icon' />
                 </NavLink>
+                <div className='delete-user-box'>
+                    <FaTrashCan className='delete-user-icon' onClick={handleDeleteDisplay} />
+                </div>
             </nav>
             <nav className='sidenav-full'>
                 <header className='visuals-header'>
@@ -58,6 +97,14 @@ const Sidenav = () => {
                     <IoSettingsSharp className='user-config-settings' />
                 </footer>
             </nav>
+            {
+                deletePopState
+                    ? <div className='delete-user-deploy'>
+                        <span onClick={handleDeleteDisplay} className='delete-user-quit'>X</span>
+                        <span className='delete-user-continue'>Deseas <button onClick={handleDeleteuser} className='delete-user-bttn'>eliminar</button> tu usuario?</span>
+                    </div>
+                    : <></>
+            }
         </>
     )
 }

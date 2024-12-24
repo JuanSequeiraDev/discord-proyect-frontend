@@ -1,39 +1,43 @@
-.sidenav{
+.sidenav {
     display: flex;
     position: absolute;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
     overflow-y: scroll;
     left: 0;
     width: 18vw;
     height: 100vh;
+    padding-left: 5px;
     gap: 1%;
     background-color: #1E1F22;
     z-index: 5;
 }
 
-.sidenav-full{
+.sidenav-full {
+    position: absolute;
+    z-index: 6;
     display: none;
 }
 
-.chats-icon{
+.chats-icon {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 42px;
     height: 42px;
-    margin: 10px 0 15px 0 ;
+    margin: 10px 0 15px 0;
     background-color: rgb(57, 62, 70);
     border-radius: 50%;
     cursor: pointer;
 }
 
-.chats-icon .msg-bubble{
+.chats-icon .msg-bubble {
     font-size: 21px;
     color: rgb(156, 155, 155);
 }
 
-.workspace-icon{
+.workspace-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,13 +49,13 @@
     cursor: pointer;
 }
 
-.workspace-icon .workspace-img{
+.workspace-icon .workspace-img {
     width: 100%;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.sidenav .create-server-bubble{
+.sidenav .create-server-bubble {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,43 +67,119 @@
     border-radius: 50%;
 }
 
-.sidenav .create-server-bubble .create-server-icon{
+.sidenav .create-server-bubble .create-server-icon {
     color: rgb(156, 155, 155);
     font-size: 19px;
 }
 
+/* DELETE USER */
+
+.sidenav .delete-user-box {
+    display: flex;
+    position: absolute;
+    z-index: 25;
+    bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(57, 62, 70);
+    cursor: pointer;
+}
+
+.sidenav .delete-user-box .delete-user-icon {
+    font-size: 17px;
+}
+
+/* DELETE USER DEPLOY */
+
+.delete-user-deploy{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #242529c2;
+    gap: 15px;
+}
+
+.delete-user-deploy .delete-user-quit{
+    color: black;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: rgb(158, 13, 13);
+    border-radius: 5px;
+    border: #1E1F22 solid 5px;
+    cursor: pointer;
+}
+
+.delete-user-deploy .delete-user-continue{
+    cursor: default;
+    background-color: rgb(158, 13, 13);
+    border-radius: 5px;
+    border: #1E1F22 solid 5px;
+    color: black;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+
+.delete-user-deploy .delete-user-continue .delete-user-bttn{
+    background-color: #1E1F22;
+    border: #FFFFFF solid 2px;
+    color: #FFFFFF;
+    outline: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
 
 /* MediaQueries */
 
-@media screen and (min-width:550px){
-    .sidenav{
+@media screen and (min-width:550px) {
+    .sidenav {
         width: 10vw;
     }
 
     /* Sidenav full-resolution */
 
-    .sidenav-full{
+    .sidenav-full {
         display: flex;
         flex-direction: column;
         position: absolute;
-        left: 10vw;
-        width: 25vw;
+        left: 9.9vw;
+        top: 0;
+        width: 25.2vw;
         height: 100vh;
-        z-index: 20;
+        z-index: 6;
         background-color: #242529;
         justify-content: space-between;
     }
 
     /* sidenav header */
 
-    .sidenav-full .visuals-header{
+    .sidenav-full .visuals-header {
         display: flex;
         flex-direction: column;
         gap: 5px;
         padding: 10px;
     }
 
-    .sidenav-full .visuals-header .fake-input-box{
+    .sidenav-full .visuals-header .fake-input-box {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -108,7 +188,7 @@
         border-bottom: #1E1F22 1.5px solid;
     }
 
-    .sidenav-full .visuals-header .fake-input-box .fake-input{
+    .sidenav-full .visuals-header .fake-input-box .fake-input {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -117,13 +197,13 @@
         background-color: #1E1F22;
     }
 
-    .sidenav-full .visuals-header .fake-input-box .fake-input .fake-input-txt{
+    .sidenav-full .visuals-header .fake-input-box .fake-input .fake-input-txt {
         font-size: 12px;
         color: #B5BAC1;
         font-weight: 400;
     }
 
-    .sidenav-full .visuals-header .content-box{
+    .sidenav-full .visuals-header .content-box {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -133,19 +213,19 @@
         border-radius: 3px;
     }
 
-    .sidenav-full .visuals-header .content-box .content-txt{
+    .sidenav-full .visuals-header .content-box .content-txt {
         font-size: 15px;
         font-weight: 400;
     }
 
-    .sidenav-full .visuals-header .content-box:hover{
-        background-color: #35373C ;
+    .sidenav-full .visuals-header .content-box:hover {
+        background-color: #35373C;
         transition-duration: 1000;
     }
 
     /* sidenav footer */
 
-    .sidenav-full .user-config-footer{
+    .sidenav-full .user-config-footer {
         display: flex;
         align-items: center;
         height: 7vh;
@@ -155,167 +235,243 @@
         border-top: #1E1F22 3px solid;
     }
 
-    .sidenav-full .user-config-footer .user-config-pfp{
+    .sidenav-full .user-config-footer .user-config-pfp {
         padding: 5px;
         width: 35px;
         border-radius: 50%;
     }
 
-    .sidenav-full .user-config-footer .user-config-username{
+    .sidenav-full .user-config-footer .user-config-username {
         font-size: 15px;
     }
 
-    .sidenav-full .user-config-footer .user-config-settings{
+    .sidenav-full .user-config-footer .user-config-settings {
         font-size: 20px;
     }
+
 }
 
 
 
-@media screen and (min-width:950px){
-    .chats-icon{
-        width: 50px;
-        height: 50px;
-    }
-    
-    .chats-icon .msg-bubble{
-        font-size: 28px;
-    }
-    
-    .workspace-icon{
-        width: 50px;
-        height: 50px;
+@media screen and (min-width:950px) {
+    .chats-icon {
+        width: 45px;
+        height: 45px;
     }
 
-    .sidenav .create-server-bubble{
-        width: 50px;
-        height: 50px;
+    .chats-icon .msg-bubble {
+        font-size: 28px;
     }
-    
-    .sidenav .create-server-bubble .create-server-icon{
+
+    .workspace-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .sidenav .create-server-bubble {
+        width: 45px;
+        height: 45px;
+    }
+
+    .sidenav .create-server-bubble .create-server-icon {
         font-size: 22px;
     }
 
-    .sidenav-full .visuals-header .fake-input-box .fake-input .fake-input-txt{
+    .sidenav-full .visuals-header .fake-input-box .fake-input .fake-input-txt {
         padding: 3px 10px;
         font-size: 13px;
     }
+
+
+    /* DELETE USER DEPLOY */
+
+    .sidenav .delete-user-box {
+        bottom: 10px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .sidenav .delete-user-box .delete-user-icon {
+        font-size: 17px;
+    }
+    
 }
 
-@media screen and (min-width: 1300px){
-    .chats-icon{
+@media screen and (min-width: 1300px) {
+    .chats-icon {
         width: 60px;
         height: 60px;
-        margin: 2vh 0 3vh 0 ;
+        margin: 2vh 0 3vh 0;
     }
-    
-    .chats-icon .msg-bubble{
+
+    .chats-icon .msg-bubble {
         font-size: 32px;
     }
-    
-    .workspace-icon{
+
+    .workspace-icon {
         width: 60px;
         height: 60px;
     }
 
-    .sidenav .create-server-bubble{
+    .sidenav .create-server-bubble {
         width: 60px;
         height: 60px;
     }
-    
-    .sidenav .create-server-bubble .create-server-icon{
+
+    .sidenav .create-server-bubble .create-server-icon {
         font-size: 22px;
     }
 
     /* sidenav-full-display */
-    .sidenav-full .visuals-header{
+    .sidenav-full .visuals-header {
         gap: 10px;
     }
 
-    .sidenav-full .visuals-header .content-box{
+    .sidenav-full .visuals-header .content-box {
         padding: 15px;
     }
 
-    .sidenav-full .visuals-header .content-box .content-txt{
+    .sidenav-full .visuals-header .content-box .content-txt {
         font-size: 20px;
     }
 
-    .sidenav-full .user-config-footer .user-config-pfp{
+    .sidenav-full .user-config-footer {
+        height: 10vh;
+    }
+
+    .sidenav-full .user-config-footer .user-config-pfp {
         padding: 5px;
-        width: 50px;
+        width: 55px;
     }
 
-    .sidenav-full .user-config-footer .user-config-username{
+    .sidenav-full .user-config-footer .user-config-username {
         font-size: 20px;
+        font-weight: 400;
     }
 
-    .sidenav-full .user-config-footer .user-config-settings{
-        font-size: 35px;
+    .sidenav-full .user-config-footer .user-config-settings {
+        font-size: 30px;
     }
 
-    .sidenav-full .visuals-header .fake-input-box .fake-input .fake-input-txt{
+    .sidenav-full .visuals-header .fake-input-box .fake-input .fake-input-txt {
         padding: 7px 40px;
         font-size: 15px;
     }
+
+
+    /* DELETE USER */
+
+    .sidenav .delete-user-box {
+        bottom: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .sidenav .delete-user-box .delete-user-icon {
+        font-size: 22px;
+    }
+
 }
 
 
 
-@media screen and (min-width: 1800px){
-    .chats-icon{
+@media screen and (min-width: 1800px) {
+    .chats-icon {
         width: 70px;
         height: 70px;
-        margin: 2vh 0 4vh 0 ;
+        margin: 2vh 0 4vh 0;
     }
-    
-    .chats-icon .msg-bubble{
+
+    .chats-icon .msg-bubble {
         font-size: 35px;
     }
-    
-    .workspace-icon{
+
+    .workspace-icon {
         width: 70px;
         height: 70px;
         margin-bottom: 15px;
     }
 
-    .sidenav .create-server-bubble{
+    .sidenav .create-server-bubble {
         width: 70px;
         height: 70px;
     }
-    
-    .sidenav .create-server-bubble .create-server-icon{
+
+    .sidenav .create-server-bubble .create-server-icon {
         font-size: 27px;
     }
 
     /* sidenav-full-display */
-    .sidenav-full .visuals-header .fake-input-box{
+    .sidenav-full .visuals-header .fake-input-box {
         margin-top: 2vh;
     }
-    
-    .sidenav-full .visuals-header .fake-input-box .fake-input .fake-input-txt{
+
+    .sidenav-full .visuals-header .fake-input-box .fake-input .fake-input-txt {
         padding: 7px 80px;
         font-size: 20px;
     }
-    
-    .sidenav-full .visuals-header{
+
+    .sidenav-full .visuals-header {
         gap: 10px;
     }
 
-    .sidenav-full .visuals-header .content-box{
+    .sidenav-full .visuals-header .content-box {
         padding: 15px;
         margin: 10px;
     }
 
-    .sidenav-full .visuals-header .content-box .content-txt{
-        font-size: 22px;
+    .sidenav-full .visuals-header .content-box .content-txt {
+        font-size: 25px;
     }
 
-    .sidenav-full .user-config-footer .user-config-pfp{
+    .sidenav-full .user-config-footer {
+        height: 8vh;
+    }
+
+    .sidenav-full .user-config-footer .user-config-pfp {
         padding: 5px;
         width: 60px;
     }
 
-    .sidenav-full .user-config-footer .user-config-username{
-        font-size: 20px;
+    .sidenav-full .user-config-footer .user-config-username {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .sidenav-full .user-config-footer .user-config-settings {
+        font-size: 40px;
+    }
+
+    /* DELETE USER */
+
+    .sidenav .delete-user-box {
+        bottom: 20px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .sidenav .delete-user-box .delete-user-icon {
+        font-size: 25px;
+    }
+    
+    .delete-user-deploy{
+        gap: 30px;
+    }
+    
+    .delete-user-deploy .delete-user-quit{
+        padding: 15px;
+        font-size: 25px;
+        border-radius: 15px;
+    }
+    
+    .delete-user-deploy .delete-user-continue{
+        padding: 20px;
+        font-size: 25px;
+    }
+    
+    .delete-user-deploy .delete-user-continue .delete-user-bttn{
+        font-weight: 400;
+        border-radius: 5px;
+        font-size: 25px;
     }
 }
