@@ -6,6 +6,9 @@ import './CreateWorkspaceScreen.css'
 import { userContext } from '../context/UserContext';
 import { getAuthenticationHeaders } from '../../fetching';
 import useForm from '../hooks/useForm';
+import { FieldConfig } from '../builders/field_config.builder.js';
+import { verifyString, verifyMaxLength, verifyMinLength } from '../utils/validations.js';
+
 
 const CreateWorkspaceScreen = () => {
     const { userInfo, workspaceAdded, userWorkspaces } = useContext(userContext)
@@ -23,10 +26,38 @@ const CreateWorkspaceScreen = () => {
 
     const { formState, handleChange, handleChangeImage } = useForm(initial_form_state)
 
+    /* VALIDACION WORKSPACE TITLE */
+
+    /*     console.log(workspaceConfig) */
+
     const navigate = useNavigate()
 
     const handleCreateWorkspace = async (e) => {
         e.preventDefault()
+
+        const workspaceConfig = new FieldConfig()
+            .setNewField('workspace_name', formState.workspace_name)
+            .setFieldValidations('workspace_name', [
+                verifyString,
+                (field_name, field_value) => verifyMinLength(field_name, field_value, 5),
+                (field_name, field_value) => verifyMaxLength(field_name, field_value, 30)
+            ])
+            .validateFields()
+            .build()
+
+        if (workspaceConfig.hayErrores) {
+            for (let field_name in workspaceConfig) {
+                if (field_name === 'hayErrores') { continue; }
+                if (workspaceConfig[field_name].errors.length >= 1) {
+                    workspaceConfig[field_name].errors.forEach(error => {
+                        setErrorState((prevState) => {
+                            return { ...prevState, [field_name]: error.message }
+                        })
+                    });
+                }
+            }
+        }
+
         const responseHTTP = await fetch(`${import.meta.env.VITE_URL_API}/api/workspaces/create/` + user_id, {
             method: 'POST',
             headers: getAuthenticationHeaders(),
@@ -57,9 +88,9 @@ const CreateWorkspaceScreen = () => {
             <h2 className='create-workspace-title'>Crea tu servidor</h2>
             <span className='create-workspace-span'>Tu servidor es el lugar donde tú y tus amigos pasan <br /> tiempo juntos. <br /> Crea el tuyo y empieza a conversar.</span>
             {
-                    formState.workspace_img
+                formState.workspace_img
                     ? <img src={formState.workspace_img} className='workspace-img' />
-                    :<div className='workspace-img-insert'>
+                    : <div className='workspace-img-insert'>
                         <MdAddAPhoto className='img-insert' /> SUBIR
                     </div>
             }

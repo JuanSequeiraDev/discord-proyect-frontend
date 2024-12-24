@@ -6,7 +6,6 @@ import './RegisterScreen.css'
 import { userContext } from '../context/UserContext';
 import { getAuthenticationHeaders } from '../../fetching';
 
-
 const LoginScreen = () => {
     const {login} = useContext(userContext)
 
