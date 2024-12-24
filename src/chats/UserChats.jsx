@@ -89,7 +89,7 @@ const UserChats = () => {
                                 </button>
                             </form>
                             : <>
-                                <h4 onClick={handleSearchDisplay} className='añadir-amigos'><HiMiniUserPlus className='friend-icon' /> Invitar amigos</h4>
+                                <h4 onClick={handleSearchDisplay} className='añadir-amigos'><HiMiniUserPlus className='friend-icon' /> Añadir amigos</h4>
                             </>
                     }
                 </nav>
